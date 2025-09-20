@@ -111,7 +111,7 @@ export default function OrdersPage() {
                   <p className="text-gray-500">Dipesan pada {new Date(order.date).toLocaleDateString()}</p>
                 </div>
                 <div className="flex items-center mt-4 md:mt-0">
-                  <p className="font-bold mr-4">Total: ${order.total.toFixed(2)}</p>
+                  <p className="font-bold mr-4">Total: Rp.{order.total.toFixed(2)}</p>
                   <Button variant="outline" size="sm" onClick={() => toggleOrderExpand(order.id)}>
                     {expandedOrderId === order.id ? (
                       <>
@@ -170,9 +170,9 @@ export default function OrdersPage() {
                             {item.name}
                           </Link>
                         </div>
-                        <div className="col-span-2 text-center">${item.price.toFixed(2)}</div>
+                        <div className="col-span-2 text-center">Rp.{item.price.toFixed(2)}</div>
                         <div className="col-span-2 text-center">{item.quantity}</div>
-                        <div className="col-span-2 text-center">${(item.price * item.quantity).toFixed(2)}</div>
+                        <div className="col-span-2 text-center">Rp.{(item.price * item.quantity).toFixed(2)}</div>
                       </div>
                     ))}
 
@@ -181,20 +181,20 @@ export default function OrdersPage() {
                         <div className="w-64">
                           <div className="flex justify-between mb-1">
                             <span>Subtotal:</span>
-                            <span>${order.subtotal.toFixed(2)}</span>
+                            <span>Rp.{order.subtotal.toFixed(2)}</span>
                           </div>
                           <div className="flex justify-between mb-1">
                             <span>Pengiriman:</span>
-                            <span>${order.shipping.toFixed(2)}</span>
+                            <span>Rp.{order.shipping.toFixed(2)}</span>
                           </div>
                           <div className="flex justify-between mb-1">
                             <span>Pajak:</span>
-                            <span>${order.tax.toFixed(2)}</span>
+                            <span>Rp.{order.tax.toFixed(2)}</span>
                           </div>
                           <Separator className="my-2" />
                           <div className="flex justify-between font-bold">
                             <span>Total:</span>
-                            <span>${order.total.toFixed(2)}</span>
+                            <span>Rp.{order.total.toFixed(2)}</span>
                           </div>
                         </div>
                       </div>

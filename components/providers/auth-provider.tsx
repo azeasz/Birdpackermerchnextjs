@@ -50,7 +50,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         if (email && password) {
           const newUser: User = {
             id: "user-1",
-            name: "John Doe",
+            name: "Mbappe",
             email: email,
             image: "",
           }

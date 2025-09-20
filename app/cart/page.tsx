@@ -30,10 +30,10 @@ export default function CartPage() {
         <div className="mb-6 flex justify-center">
           <ShoppingBag className="h-24 w-24 text-gray-300" />
         </div>
-        <h1 className="text-3xl font-bold mb-4">Your cart is empty</h1>
-        <p className="text-gray-500 mb-8">Looks like you haven't added any products to your cart yet.</p>
+        <h1 className="text-3xl font-bold mb-4">Kosong</h1>
+        <p className="text-gray-500 mb-8">Belum ada cart.</p>
         <Button asChild>
-          <Link href="/products">Start Shopping</Link>
+          <Link href="/products">Mulai Belanja</Link>
         </Button>
       </div>
     )
@@ -48,7 +48,7 @@ export default function CartPage() {
           <Card className="p-6">
             <div className="hidden md:grid grid-cols-12 gap-4 mb-4 font-medium">
               <div className="col-span-6">Product</div>
-              <div className="col-span-2 text-center">Price</div>
+              <div className="col-span-2 text-center">Harga</div>
               <div className="col-span-2 text-center">Quantity</div>
               <div className="col-span-2 text-center">Total</div>
             </div>
@@ -75,13 +75,13 @@ export default function CartPage() {
                         onClick={() => removeFromCart(item.id)}
                       >
                         <Trash2 className="h-4 w-4 mr-1" />
-                        <span className="text-xs">Remove</span>
+                        <span className="text-xs">Hapus</span>
                       </Button>
                     </div>
                   </div>
 
                   <div className="col-span-2 text-center">
-                    <div className="md:hidden text-sm text-gray-500 mb-1">Price:</div>${item.price.toFixed(2)}
+                    <div className="md:hidden text-sm text-gray-500 mb-1">Harga:</div>Rp.{item.price.toFixed(2)}
                   </div>
 
                   <div className="col-span-2 flex items-center justify-center">
@@ -108,7 +108,7 @@ export default function CartPage() {
                   </div>
 
                   <div className="col-span-2 text-center font-medium">
-                    <div className="md:hidden text-sm text-gray-500 mb-1">Total:</div>$
+                    <div className="md:hidden text-sm text-gray-500 mb-1">Total:</div>Rp.
                     {(item.price * item.quantity).toFixed(2)}
                   </div>
                 </div>
@@ -122,7 +122,7 @@ export default function CartPage() {
                 Clear Cart
               </Button>
               <Button variant="outline" asChild>
-                <Link href="/products">Continue Shopping</Link>
+                <Link href="/products">Lanjutkan Belanja</Link>
               </Button>
             </div>
           </Card>
@@ -135,27 +135,27 @@ export default function CartPage() {
             <div className="space-y-3 mb-6">
               <div className="flex justify-between">
                 <span>Subtotal</span>
-                <span>${cartTotal.toFixed(2)}</span>
+                <span>Rp.{cartTotal.toFixed(2)}</span>
               </div>
               <div className="flex justify-between">
                 <span>Shipping</span>
-                <span>Free</span>
+                <span>Gratis</span>
               </div>
               <div className="flex justify-between">
                 <span>Tax</span>
-                <span>${(cartTotal * 0.1).toFixed(2)}</span>
+                <span>Rp.{(cartTotal * 0.1).toFixed(2)}</span>
               </div>
 
               <Separator className="my-3" />
 
               <div className="flex justify-between font-bold">
                 <span>Total</span>
-                <span>${(cartTotal + cartTotal * 0.1).toFixed(2)}</span>
+                <span>Rp.{(cartTotal + cartTotal * 0.1).toFixed(2)}</span>
               </div>
             </div>
 
             <Button className="w-full" onClick={handleCheckout} disabled={isProcessing}>
-              {isProcessing ? "Processing..." : "Proceed to Checkout"}
+              {isProcessing ? "Proses..." : "Proceed to Checkout"}
             </Button>
           </Card>
         </div>

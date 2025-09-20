@@ -27,7 +27,7 @@ export default function Home() {
 
       <section className="my-8">
         <div className="flex flex-col md:flex-row justify-between items-center mb-6">
-          <h2 className="text-3xl font-bold">All Products</h2>
+          <h2 className="text-3xl font-bold">Semua Products</h2>
           <SearchBar />
         </div>
 

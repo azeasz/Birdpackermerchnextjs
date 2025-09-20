@@ -29,7 +29,7 @@ export default function PaymentMethodsPage() {
     {
       id: "card-1",
       cardNumber: "4242 4242 4242 4242",
-      cardName: "John Doe",
+      cardName: "Mbappe",
       expiry: "12/25",
       isDefault: true,
     },
@@ -187,7 +187,7 @@ export default function PaymentMethodsPage() {
                 <Label htmlFor="cardName">Nama pada Kartu</Label>
                 <Input
                   id="cardName"
-                  placeholder="John Doe"
+                  placeholder="Mbappe"
                   value={newCard.cardName}
                   onChange={(e) => setNewCard({ ...newCard, cardName: e.target.value })}
                   required

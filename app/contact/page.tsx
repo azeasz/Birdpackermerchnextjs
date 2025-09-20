@@ -56,8 +56,8 @@ export default function ContactPage() {
             <MapPin className="h-5 w-5 text-primary mr-3" />
             <h3 className="text-lg font-semibold">Alamat Kami</h3>
           </div>
-          <p className="text-muted-foreground mb-2">Jl. Sudirman No. 123</p>
-          <p className="text-muted-foreground">Jakarta, Indonesia 12345</p>
+          <p className="text-muted-foreground mb-2">Jl. jalan</p>
+          <p className="text-muted-foreground">Batu, Indonesia 12345</p>
         </Card>
 
         <Card className="p-6">
@@ -74,8 +74,8 @@ export default function ContactPage() {
             <Mail className="h-5 w-5 text-primary mr-3" />
             <h3 className="text-lg font-semibold">Email</h3>
           </div>
-          <p className="text-muted-foreground mb-2">info@nextshop.com</p>
-          <p className="text-muted-foreground">support@nextshop.com</p>
+          <p className="text-muted-foreground mb-2">info@birdpackerstore.com</p>
+          <p className="text-muted-foreground">support@birdpacker.com</p>
         </Card>
       </div>
 
@@ -168,8 +168,8 @@ export default function ContactPage() {
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="bg-background/80 backdrop-blur-sm p-4 rounded-md">
-                  <h3 className="font-semibold">NextShop Headquarters</h3>
-                  <p className="text-sm">Jl. Sudirman No. 123, Jakarta</p>
+                  <h3 className="font-semibold">Birdpacker Store</h3>
+                  <p className="text-sm">Jl. jalan jalan</p>
                 </div>
               </div>
             </div>

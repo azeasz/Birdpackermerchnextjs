@@ -40,7 +40,7 @@ export default function PaymentMethodForm({ cardInfo, setCardInfo }: PaymentMeth
         <Label htmlFor="cardName">Name on Card</Label>
         <Input
           id="cardName"
-          placeholder="John Doe"
+          placeholder="Mbappe"
           value={cardInfo.cardName}
           onChange={(e) => setCardInfo({ ...cardInfo, cardName: e.target.value })}
           required

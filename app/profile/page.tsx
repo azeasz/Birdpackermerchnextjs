@@ -165,10 +165,10 @@ export default function ProfilePage() {
                     </div>
                     <div>
                       <p className="font-medium">{user.name}</p>
-                      <p>123 Main Street</p>
+                      <p>123 Batu</p>
                       <p>Apt 4B</p>
-                      <p>New York, NY 10001</p>
-                      <p>United States</p>
+                      <p>Batu, Ngalam</p>
+                      <p>Indo</p>
                       <p>Phone: {user.phone || "(555) 123-4567"}</p>
                     </div>
                   </Card>
